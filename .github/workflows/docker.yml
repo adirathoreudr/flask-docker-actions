@@ -14,8 +14,9 @@ jobs:
             - name: Checkout Repository 
               uses: actions/checkout@v3
               
+            
             - name: Set up QEMU 
-              uses: actions/setup-qemu-action@v2
+              uses: docker/setup-qemu-action@v2 
               
 
             - name: Login to Docker Hub
